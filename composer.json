@@ -1,0 +1,33 @@
+{
+  "name": "prisco/facile-php",
+  "description": "Simple PHP library to create a fully functional backend",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "FacilePHP\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "doctrine/dbal": "^3.7",
+    "phpmailer/phpmailer": "^6.9",
+    "tecnickcom/tcpdf": "6.6.*",
+    "setasign/fpdi": "^2.5",
+    "lcobucci/jwt": "^5.2"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.34",
+    "phpstan/phpstan": "^1.10"
+  },
+  "scripts": {
+    "fix-style": [
+      "@php ./vendor/bin/php-cs-fixer fix"
+    ],
+    "check-code": [
+      "@php ./vendor/bin/phpstan analyse -c phpstan.neon"
+    ]
+  }
+}
