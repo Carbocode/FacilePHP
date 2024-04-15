@@ -14,7 +14,7 @@
     "ext-json": "*",
     "doctrine/dbal": "^3.7",
     "phpmailer/phpmailer": "^6.9",
-    "tecnickcom/tcpdf": "6.6.*",
+    "tecnickcom/tcpdf": "6.6.* || 6.7.*",
     "setasign/fpdi": "^2.5",
     "lcobucci/jwt": "^5.2"
   },
